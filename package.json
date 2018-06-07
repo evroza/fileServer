@@ -1,0 +1,21 @@
+{
+  "name": "login-demo-cookies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "repository": "https://bitbucket.org/drjones2010/login-demo-cookies.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "moment": "^2.22.2",
+    "sequelize": "^4.35.5",
+    "sqlite3": "^3.1.13"
+  }
+}
