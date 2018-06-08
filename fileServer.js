@@ -9,7 +9,7 @@ var bodyParser = require("body-parser");
 var fs = require('fs');
 
 
-var DbApi = require("./libs/DbApi");
+var DbApi = require("./libs/dbApi");
 
 var app = express();
 app.set("view engine", "ejs");
@@ -196,7 +196,7 @@ function isAuthenticated(req, res, next){
                     // Submit error messages
                     res.setHeader('Content-Type', 'application/json');
                     res.send(JSON.stringify({ error: "Invalid token submitted!", status:"error" }));
-                    //return next();
+                    return next();
                 }
                 req.username = session.username;
                 // The token verification was successful!

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03b64e31-7191-43ca-a1a4-7a05534acf1c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/libs/dbApi.js" afterPath="$PROJECT_DIR$/libs/dbApi.js" />
-    </list>
+    <list default="true" id="03b64e31-7191-43ca-a1a4-7a05534acf1c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -31,18 +27,28 @@
       <file leaf-file-name="fileServer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fileServer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+            <state relative-caret-position="87">
+              <caret line="120" column="69" lean-forward="false" selection-start-line="120" selection-start-column="61" selection-end-line="120" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbApi.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dbApi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/dbApi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="194" column="76" lean-forward="true" selection-start-line="194" selection-start-column="76" selection-end-line="194" selection-end-column="76" />
+            <state relative-caret-position="87">
+              <caret line="209" column="73" lean-forward="false" selection-start-line="209" selection-start-column="65" selection-end-line="209" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -59,11 +65,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tim</find>
       <find>token</find>
       <find>tokena</find>
       <find>createSession</find>
-      <find>tokenAge</find>
       <find>isAuthenticated</find>
       <find>status:</find>
       <find>findone</find>
@@ -76,19 +80,21 @@
       <find>bytoke</find>
       <find>retrieveUser</find>
       <find>moment</find>
-      <find>login</find>
       <find>createu</find>
-      <find>age =</find>
       <find>createuser</find>
       <find>retrieveSessionByUser</find>
       <find>upd</find>
       <find>create</find>
-      <find>regist</find>
       <find>updateSession</find>
       <find>&quot;0</find>
       <find>destro</find>
       <find>deleteSessionByUser</find>
+      <find>regist</find>
       <find>creates</find>
+      <find>fs</find>
+      <find>login</find>
+      <find>age =</find>
+      <find>tokenAge</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -97,10 +103,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/fileServer.js" />
         <option value="$PROJECT_DIR$/libs/dbApi.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/fileServer.js" />
       </list>
     </option>
   </component>
@@ -187,16 +193,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.fileServer.js">
-    <configuration name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" node-parameters="app" working-dir="$PROJECT_DIR$" />
-    <configuration name="fileServer.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="fileServer.js" working-dir="$PROJECT_DIR$" />
-    <list size="2">
+  <component name="RunManager" selected="Node.js.fileServer.js (1)">
+    <configuration name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" node-parameters="fileServer" working-dir="$PROJECT_DIR$" />
+    <configuration name="dbApi.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="dbApi.js" working-dir="$PROJECT_DIR$/libs" />
+    <configuration name="fileServer.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="fileServer.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="fileServer.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" working-dir="$PROJECT_DIR$" />
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Node.js.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.fileServer.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.dbApi.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.fileServer.js (1)" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.fileServer.js" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.fileServer.js (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.fileServer.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.dbApi.js" />
       </list>
     </recent_temporary>
   </component>
@@ -213,12 +225,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528375247965</updated>
-      <workItem from="1528375249307" duration="27493000" />
+      <workItem from="1528375249307" duration="34396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27493000" />
+    <option name="totallyTimeSpent" value="34396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="745" extended-state="0" />
@@ -230,11 +242,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39901477" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39901477" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -307,20 +319,18 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/fileServer.js</url>
+          <line>200</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1751">
@@ -331,16 +341,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fileServer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        <state relative-caret-position="87">
+          <caret line="120" column="69" lean-forward="false" selection-start-line="120" selection-start-column="61" selection-end-line="120" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/dbApi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="194" column="76" lean-forward="true" selection-start-line="194" selection-start-column="76" selection-end-line="194" selection-end-column="76" />
+        <state relative-caret-position="87">
+          <caret line="209" column="73" lean-forward="false" selection-start-line="209" selection-start-column="65" selection-end-line="209" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding />
         </state>
       </provider>
