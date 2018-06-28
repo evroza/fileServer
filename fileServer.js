@@ -199,12 +199,13 @@ function isAuthenticated(req, res, next){
                     // Submit error messages
                     res.setHeader('Content-Type', 'application/json');
                     res.send(JSON.stringify({ error: "Invalid token submitted!", status:"error" }));
-                    return next();
-                }
-                req.username = session.username;
-                // The token verification was successful!
-                console.log("User token successfully verified! Token:", token);
-                return next();
+                    //return next();
+                } else{
+					req.username = session.username;
+					// The token verification was successful!
+					console.log("User token successfully verified! Token:", token);
+					return next();
+				}                
             }).catch(err => {
             console.log(err);
         });
