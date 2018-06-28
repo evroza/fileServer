@@ -49,22 +49,22 @@ app.post("/login", (req, res) => {
                     // user unauthorized
                     res.status(403);
                     res.setHeader('Content-Type', 'application/json');
-                    res.send(JSON.stringify({ error: "The username|password combination submitted is incorrect", status: "error" }));
+                    res.send(JSON.stringify({ message: "The username|password combination submitted is incorrect", status: "error" }));
                 }
             }).catch(err => {
             console.log("ERROR: Possible promise rejection because of user|password incorrectness");
 
-            //res.render("login", {error: "There was an error. Please try again in a few moments."});
+            //res.render("login", {message: "There was an error. Please try again in a few moments.", status: "error"});
 			//return error response json
 			res.status(403);
 			res.setHeader('Content-Type', 'application/json');
-			res.send(JSON.stringify({ error: "The username|password combination submitted is incorrect", status: "error" }));
+			res.send(JSON.stringify({ message: "The username|password combination submitted is incorrect", status: "error" }));
         });
     } else {
         // fail and return json error message
         console.log("Either username or password is missing or incorrectly configured in post message");
         res.setHeader('Content-Type', 'application/json');
-        res.send(JSON.stringify({ error: "Login unsuccessful. Username or password is missing in request. Check API documentation for correct configuration" }));
+        res.send(JSON.stringify({ message: "Login unsuccessful. Username or password is missing in request. Check API documentation for correct configuration", status: "error" }));
     }
 
 
@@ -94,7 +94,7 @@ app.post("/save", isAuthenticated, (req, res) => {
 
             res.status(501);
             res.setHeader('Content-Type', 'application/json');
-            res.send(JSON.stringify({ error: "Dataset save failed. Unspecified server error!", status: "error" }));
+            res.send(JSON.stringify({ message: "Dataset save failed. Unspecified server error!", status: "error" }));
             return console.log(err);
 
         }
@@ -106,7 +106,7 @@ app.post("/save", isAuthenticated, (req, res) => {
     //res.render("home");
 
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify({ success: "Dataset successfully saved to file!" }));
+    res.send(JSON.stringify({ message: "Dataset successfully saved to file!", status: "success" }));
 });
 
 
@@ -131,7 +131,7 @@ app.post("/signup", (req, res) => {
 
             res.status(409);
             res.setHeader('Content-Type', 'application/json');
-            res.send(JSON.stringify({ error: "Username already taken", status: "error" }));
+            res.send(JSON.stringify({ message: "Username already taken", status: "error" }));
     }).catch(err => {
         console.log(err);
     });
@@ -162,7 +162,7 @@ app.post('/logout', (req, res) => {
                 console.log('User has been logged out. Token destroyed');
 
                 res.setHeader('Content-Type', 'application/json');
-                res.send(JSON.stringify({ success: "Logout succesful. Try logging in again to access api" }));
+                res.send(JSON.stringify({ message: "Logout succesful. Try logging in again to access api", status: "success" }));
             } else {
                 console.log('Session not found. Redirect to /login');
             }
@@ -198,7 +198,7 @@ function isAuthenticated(req, res, next){
                     res.status(401);
                     // Submit error messages
                     res.setHeader('Content-Type', 'application/json');
-                    res.send(JSON.stringify({ error: "Invalid token submitted!", status:"error" }));
+                    res.send(JSON.stringify({ message: "Invalid token submitted!", status:"error" }));
                     //return next();
                 } else{
 					req.username = session.username;
@@ -214,7 +214,7 @@ function isAuthenticated(req, res, next){
         res.status(401);
         // Submit error messages
         res.setHeader('Content-Type', 'application/json');
-        res.send(JSON.stringify({ error: "Authorization header is missing in your request. Please check API documentation!", status:"error" }));
+        res.send(JSON.stringify({ message: "Authorization header is missing in your request. Please check API documentation!", status:"error" }));
         //return next();
     }
 }
