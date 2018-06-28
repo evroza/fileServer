@@ -122,9 +122,11 @@ module.exports = {
 
 	retrieveUser: function (user, password){
 		return User.findOne({where: {username: user}})
-		.then(user => {
-			if (!user)
+		.then(user => {			
+			if (!user){
+				console.log("ERROR: No user password of that combination found - invalid login!");
 				return null;
+			}				
 				
 			return user.checkPassword(password).then(result => {
 				if (result) return user;
@@ -178,10 +180,17 @@ module.exports = {
 
 	login: function (user, pass, tokenAge){
 		return this.retrieveUser(user, pass)
-		.then(user => {
+		.then(user => {			
 			// First verify if user has active session. If so verify token expiration, if unexpired return existing token.
 			// If token expired, update session with new token and tokenAge
 			// If user session doesn't exist create it.
+			
+			//First - if user is null, it means the user pass combination is invalid, return error
+			if(!user) {
+				// throwing error will invoke promise rejection code
+				throw new Error("The username password cobination might be incorrect, 'user' object is null!!");
+			}			
+			console.log("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
 
             return this.retrieveSessionByUser(user.username).then((session) => {
                 if (!session){

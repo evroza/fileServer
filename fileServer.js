@@ -52,10 +52,13 @@ app.post("/login", (req, res) => {
                     res.send(JSON.stringify({ error: "The username|password combination submitted is incorrect", status: "error" }));
                 }
             }).catch(err => {
-            console.log(err);
+            console.log("ERROR: Possible promise rejection because of user|password incorrectness");
 
-            res.status(401);
-            res.render("login", {error: "There was an error. Please try again in a few moments."});
+            //res.render("login", {error: "There was an error. Please try again in a few moments."});
+			//return error response json
+			res.status(403);
+			res.setHeader('Content-Type', 'application/json');
+			res.send(JSON.stringify({ error: "The username|password combination submitted is incorrect", status: "error" }));
         });
     } else {
         // fail and return json error message
