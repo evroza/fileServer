@@ -77,12 +77,16 @@ app.post("/login", (req, res) => {
 app.post("/save", isAuthenticated, (req, res) => {
     let clientIP = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
     console.log("Token: ", req.headers.authorization);
+	
+	console.log("========================================================================");
+	console.log(req.body);
+	console.log("========================================================================");
 
     // If autheniticated - save file dataset in payload into unique  file containing timestamp and ip of sender
     // File name format -->  timestamp_ipAddress.txt
     // Check dataset exists and save it, if not then save an empty string
     // Log that no dataset was received
-    let content = req.body.dataset || '';
+    let content = JSON.stringify(req.body.dataset) || '';
 
     let fileName = '';
     fileName += new Date().getTime() + '_.txt';
